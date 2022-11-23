@@ -1,3 +1,3 @@
 #website perso
-https://alainottenheimer.github.io/website/
+https://alainottenheimer.github.io
  
