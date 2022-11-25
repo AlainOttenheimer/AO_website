@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>mon site web  </h1>
+   <p>new content</p>
+   <div class="panel-body" style="background-color: #85d6d2; color:rgb(241, 10, 10);"  ><strong>Alain Ottenheimer</strong></div>
+   <div><img src="images/mediuma.jpg" alt="alter0"></div>
+   <div><img src="https://alainottenheimer.github.io/images/mediumb.jpg" alt="alter1"></div>
+   <div><img src="images/mediumb.jpg" alt="alter0"></div>
+   <div><img src="https://alainottenheimer.github.io/images/medium45.jpg" alt="alter3"></div>
+   <div><img src="../alainO.io/timeline_image/papier+hp.png" alt="altert4"></div>
+   <div><img src="https://datasens.fr/touristoscope/images/ep13-bienveillance-img-bienveillance-1.jpeg" alt="altert5"></div> 
+   <div></div><img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" ></div>
+
+   <div id="observablehq-viewof-country-95254095"></div>
+   <div id="observablehq-viewof-selected_year-95254095"></div>
+   <div id="observablehq-viewof-part_pourcent-95254095"></div>
+   <div id="observablehq-Pyramid_country-95254095"></div>
+   <p>Credit: <a href="https://observablehq.com/@aotten/countries-population-1950-2100"> COUNTRIES POPULATION (2) by Alain Ottenheimer</a></p>
+   
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+   <script type="module">
+   import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+   import define from "https://api.observablehq.com/@aotten/countries-population-1950-2100.js?v=3";
+   new Runtime().module(define, name => {
+     if (name === "viewof country") return new Inspector(document.querySelector("#observablehq-viewof-country-95254095"));
+     if (name === "viewof selected_year") return new Inspector(document.querySelector("#observablehq-viewof-selected_year-95254095"));
+     if (name === "viewof part_pourcent") return new Inspector(document.querySelector("#observablehq-viewof-part_pourcent-95254095"));
+     if (name === "Pyramid_country") return new Inspector(document.querySelector("#observablehq-Pyramid_country-95254095"));
+     return ["un_pop_country","un_pop_country_an_temp","un_pop_country_minMax_date","max_pop","un_pop_country_an","total_H","total_F","total_pop","mediane_H","mediane_F"].includes(name);
+   });
+   </script>
+
+
+
+
+
+
+   
+</body>
+</html>
